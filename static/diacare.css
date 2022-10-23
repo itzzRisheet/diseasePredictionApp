@@ -1,0 +1,193 @@
+:root {
+    --white: rgba(255, 255, 255, 0.3);
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clear: right;
+    position:fixed;
+    text-align: center;
+    font-size: 72px;
+    line-height: 108px;
+    height: auto;
+    background: #335C7D;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+  header.sticky {
+    font-size: 24px;
+    line-height: 48px;
+    height: 48px;
+    background: #efc47D;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  header img{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clear: right;
+    height: 150px;
+    width: auto;
+  }
+
+  
+
+body {
+    background: linear-gradient(45deg, #1f242d , #1f242d);
+    /* background-color: #1f242d; */
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    position: absolute;
+    transform: translate(-50%, -48%);
+    top: 50%;
+    left: 50%;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.024);
+    border: 1px solid #00dfc4;
+    padding: 3em;
+    height: 100%;
+    margin-top: 500px  ;
+    margin-bottom: 20%;
+    border-radius: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    transition: transform 0.2s;
+    /* transition: height 0.2s , width 0.2s; */
+
+}
+form:hover{
+      background: rgba(255,255,255,0.01);
+      box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+    transform: scale(1.05,1.05);
+}
+
+form p {
+
+    font-weight: 500;
+    color: rgb(8, 253, 253);
+    opacity: 0.7;
+    font-size: 1.4rem;
+    /* margin-top: ; */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+label{
+    margin-bottom: 10px;
+    color: white;
+}
+::placeholder {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  }
+input {
+    background: transparent;
+    width: 200px;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: none;
+    border-left: 1px solid var(--white);
+    border-top: 1px solid var(--white);
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+input[type="text"]{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+input:focus , .button:focus{
+    outline: none;
+} 
+
+ 
+
+
+
+.button {
+    display: inline-block;
+    border: 1px solid currentColor;
+    border-radius: 3rem;
+    color: rgb(0, 255, 247);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    margin: 2px 4px;
+    position: relative;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    will-change: transform;
+    z-index: 0;
+}
+
+.button::after {
+    background-color: rgb(46, 208, 37);
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10dg);
+    transform-origin: top left;
+    transition: 0.2s ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+.button:hover::after {
+    transform: translate(0, 0);
+}
+
+.button:hover {
+    border: 2px solid transparent;
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 255, 242);
+    transform: scale(1.05);
+    will-change: transform;
+    cursor: pointer;
+}
+
+input[type=text]:hover {
+    border: 10px 10px 10px 10px solid transparent;
+
+    transform: scale(1.05);
+    will-change: transform;
+} 
