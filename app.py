@@ -12,7 +12,7 @@ def home_page():
         print("Get Method is There")
     return render_template("index.html")
 
-
+#this is the comment added from pc offline 
 
 @app.route("/result",methods=["GET","POST"])
 def nextPage():
