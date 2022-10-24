@@ -12,8 +12,7 @@ def home_page():
         print("Get Method is There")
     return render_template("index.html")
 
-#this is the comment added from pc offline 
-
+# comment added at 11:02 PM
 @app.route("/result",methods=["GET","POST"])
 def nextPage():
     global selected_sympt
