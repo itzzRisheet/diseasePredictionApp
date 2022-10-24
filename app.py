@@ -13,6 +13,7 @@ def home_page():
     return render_template("index.html")
 
 # comment added at 11:02 PM
+# comment added at 11:05 PM through github
 @app.route("/result",methods=["GET","POST"])
 def nextPage():
     global selected_sympt
